@@ -4,7 +4,7 @@
 
 Vào `/home/student/labtainer/labtainer-student` và gõ lệnh sau trên terminal:
 ``` bash
-imodule https://github.com/TuTran21195/steg-labs/raw/refs/heads/main/steg-fhss-embed.tar
+imodule https://github.com/TuTran21195/steg-labs/raw/refs/heads/main/steg-fhss-embed/imodule.tar
 ```
 ### khởi tạo lab trên labtainer:
 ```
