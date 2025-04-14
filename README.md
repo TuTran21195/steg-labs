@@ -6,6 +6,7 @@ Vào `/home/student/labtainer/labtainer-student` và gõ lệnh sau trên termin
 ``` bash
 imodule https://github.com/TuTran21195/steg-labs/raw/refs/heads/main/steg-fhss-embed/imodule.tar
 ```
+> Các lỗi mn báo lại cho t qua ib zalo nhé. Một số lỗi có thể có như: lỗi ngay từ bước imodule, đã imodule và chạy labtainer -r xong nhưng bị treo máy,...
 ### khởi tạo lab trên labtainer:
 ```
 labtainer -r steg-fhss-embed
@@ -31,7 +32,7 @@ python3 step6_evaluate.py original_audio.wav stego_audio.wav
 ở trong file code của bước 3 có phần: `modulated_signal *= 0.0005  # giảm mức ảnh hưởng lên âm thanh`
 Xin chú ý: hệ số này nhỏ thế nào là đủ?
 các bạn cần thử với nhiều hệ số khác nhau (0.1 0.01 0.001 0.0005 0.0001 ...)
-nếu như các bạn vẫn giải được ra tin nhắn ở bước 5, đồng thời hệ số MSE sẽ có ý nghĩa như sau:
+nếu như các bạn vẫn giải được ra tin nhắn ở bước 5, đồng thời hệ số MSE cần phải đủ nhỏ, với thang đo MSE sẽ có ý nghĩa như sau:
 
 - **MSE: 0 – 10**: rất tốt, gần như không nghe ra sự khác biệt (checkwork mse)
     
