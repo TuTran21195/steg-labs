@@ -7,6 +7,7 @@ Vào `/home/student/labtainer/labtainer-student` và gõ lệnh sau trên termin
 imodule https://github.com/TuTran21195/steg-labs/raw/refs/heads/main/steg-fhss-embed/imodule.tar
 ```
 > Các lỗi mn báo lại cho t qua ib zalo nhé. Một số lỗi có thể có như: lỗi ngay từ bước imodule, đã imodule và chạy labtainer -r xong nhưng bị treo máy,...
+> Ngoài ra thì hiện tại, checkwork mse đang có chút lỗi, các bạn chỉ cần thấy đáp án đầu ra là `good` là được.
 ### khởi tạo lab trên labtainer:
 ```
 labtainer -r steg-fhss-embed
