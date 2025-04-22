@@ -7,7 +7,7 @@ Vào `/home/student/labtainer/labtainer-student` và gõ lệnh sau trên termin
 imodule https://github.com/TuTran21195/steg-labs/raw/refs/heads/main/steg-fhss-embed/imodule.tar
 ```
 > Các lỗi mn báo lại cho t qua ib zalo nhé. Một số lỗi có thể có như: lỗi ngay từ bước imodule, đã imodule và chạy labtainer -r xong nhưng bị treo máy,...
-> Ngoài ra thì hiện tại, checkwork mse đang có chút lỗi, các bạn chỉ cần thấy đáp án đầu ra là `good` là được.
+
 ### khởi tạo lab trên labtainer:
 ```
 labtainer -r steg-fhss-embed
@@ -26,7 +26,7 @@ python3 step3_modulate_fsk.py bits.txt hopping_pattern.txt
 
 python3 step4_embed_message.py original_audio.wav modulated_signal.wav
 
-python3 step5_extract_message.py stego_audio.wav modulated_signal.wav hopping_pattern.txt
+python3 step5_extract_message.py stego_audio.wav hopping_pattern.txt
 
 python3 step6_evaluate.py original_audio.wav stego_audio.wav
 ```
@@ -35,9 +35,9 @@ Xin chú ý: hệ số này nhỏ thế nào là đủ?
 các bạn cần thử với nhiều hệ số khác nhau (0.1 0.01 0.001 0.0005 0.0001 ...)
 nếu như các bạn vẫn giải được ra tin nhắn ở bước 5, đồng thời hệ số MSE cần phải đủ nhỏ, với thang đo MSE sẽ có ý nghĩa như sau:
 
-- **MSE: 0 – 10**: rất tốt, gần như không nghe ra sự khác biệt (checkwork mse)
+- **MSE: 0 – 10**: rất tốt, gần như không nghe ra sự khác biệt (pass checkwork mse)
     
-- **MSE: 10 – 100**: vẫn ổn, tai thường không phân biệt được (checkwork mse)
+- **MSE: 10 – 100**: vẫn ổn, tai thường không phân biệt được (pass checkwork mse)
     
 - **MSE > 100**: có thể nghe thấy sự khác biệt tùy mức độ
     
