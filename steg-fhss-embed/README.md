@@ -1,6 +1,7 @@
 
 ## Flow đơn giản giải thích quy trình tuần tự với input output 
 
+
 ### **Bước 1: Chuyển đổi thông điệp từ file `message.txt` thành chuỗi bit**
 
 #### **Code của Bước 1**: `step1_text_to_bits.py`
@@ -235,76 +236,70 @@ def bits_to_text(bits):
     return ''.join(chr(int(c, 2)) for c in chars if len(c) == 8)
 
 def extract_message(signal, fs, hopping_pattern, base_freq=2000, delta=100):
-    t = np.linspace(0, 0.01, int(fs * 0.01), endpoint=False)
-    samples_per_symbol = len(t)
-
-    num_bits = len(signal) // samples_per_symbol
+    samples_per_bit = int(fs * 0.01)
     bits = ''
 
-    for i in range(num_bits):
-        seg = signal[i*samples_per_symbol : (i+1)*samples_per_symbol]
-        hop = hopping_pattern[i]
+    for i, hop in enumerate(hopping_pattern):
         f0 = base_freq + hop * delta
         f1 = base_freq + (hop + 1) * delta
+        seg = signal[i*samples_per_bit : (i+1)*samples_per_bit]
 
-        corr0 = np.sum(seg * np.sin(2 * np.pi * f0 * t))
-        corr1 = np.sum(seg * np.sin(2 * np.pi * f1 * t))
+        # FFT
+        spectrum = np.abs(np.fft.rfft(seg))
+        freqs = np.fft.rfftfreq(len(seg), 1/fs)
 
-        bits += '0' if corr0 > corr1 else '1'
+        idx_f0 = np.argmin(np.abs(freqs - f0))
+        idx_f1 = np.argmin(np.abs(freqs - f1))
+
+        bits += '0' if spectrum[idx_f0] > spectrum[idx_f1] else '1'
 
     return bits
 
 # --- Kiểm tra tham số ---
-if len(sys.argv) != 4:
-    print("Hint: python3 step5_extract_message.py stego_audio.wav modulated_signal.wav hopping_pattern.txt")
+if len(sys.argv) != 3:
+    print("Hint: python3 step5_extract_message.py stego_audio.wav hopping_pattern.txt")
     sys.exit(1)
 
 stego_file = sys.argv[1]
-mod_signal_file = sys.argv[2]
-hopping_pattern_file = sys.argv[3]
+hopping_pattern_file = sys.argv[2]
 
 # Đọc file
 fs, stego_audio = read(stego_file)
-stego_audio = stego_audio.astype(np.float32) / 32767  # chuẩn hóa
-
-mod_signal, _ = sf.read(mod_signal_file, dtype='float32')
-signal_length = len(mod_signal)
-
-# Cắt phần đầu chứa thông điệp
-signal = stego_audio[:signal_length]
+stego_audio = stego_audio.astype(np.float32) / 32768.0
 
 # Đọc hopping pattern
 with open(hopping_pattern_file, 'r') as f:
     hopping_pattern = [int(x) for x in f.read().strip().split()]
 
+# Lấy phần chứa thông điệp từ âm thanh stego
+samples_per_bit = int(fs * 0.01)
+needed_samples = len(hopping_pattern) * samples_per_bit
+signal = stego_audio[:needed_samples]
+
 # Trích xuất bit
 extracted_bits = extract_message(signal, fs, hopping_pattern)
 
-
-print("Thông điệp đã trích xuất và lưu vào recovered_bits.txt")
-print(f"ket qua tach duoc:{extracted_bits}")
-
-# Lưu kết quả trích xuất bit
+# Lưu kết quả
 with open("recovered_bits.txt", "w") as f:
     f.write(extracted_bits)
 
-# Chuyển bits thành văn bản
 recovered_text = bits_to_text(extracted_bits)
 
+with open("recovered_message.txt", "w") as f:
+    f.write(recovered_text)
 
-print("Thông điệp đã trích xuất và lưu vào recovered_bits.txt và recovered_message.txt")
-print("Nội dung:", recovered_text)
+print("Đã lưu recovered_bits.txt và recovered_message.txt")
+print("Nội dung tin nhắn:", recovered_text)
 
 ```
 
 #### **Hướng dẫn thực hiện**:
 
-- **Mục tiêu**: Sinh viên cần giải điều chế và trích xuất thông điệp từ âm thanh đã nhúng.
+- **Mục tiêu**: Sinh viên cần giải điều chế và trích xuất thông điệp từ âm thanh đã nhúng (người nhận cần có hopping_pattern đồng bộ với bên gửi - nghĩa là 2 bộ sinh hopping_pattern phải giống nhau, trong kịch bản code này thì người gửi chỉ đang muốn kiểm tra xem mình đã giấu đúng tin chưa thì ta sẽ lấy luôn hopping_pattern đã sinh trước đó, nhưng với kịch bản của người nhận tách tin thì họ phải sinh ra được hopping_pattern, điều đó sẽ được làm rõ trong bài lab tách tin fhss)
     
 - **Lệnh cần gõ**:
-    
-    ```bash
-    python3 step5_extract_message.py stego_audio.wav <chiều_dài_thông_điệp>
+```sh
+python3 step5_extract_message.py stego_audio.wav hopping_pattern.txt
     ```
     
 
@@ -356,7 +351,7 @@ evaluate(original_file, stego_file)
     ```bash
     python3 step6_evaluate.py original_audio.wav stego_audio.wav
     ```
-    
+
 
 
 # code gốc chạy thành công:
