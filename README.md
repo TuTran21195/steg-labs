@@ -1,6 +1,8 @@
 # Hướng dẫn làm bài steg-fhss-embed
 
 > Note update 22/04/25: T vừa update lại checkwork mse, nếu trước đó ae đã imodule thì giờ ae cần imodule lại để update lại bài lab. (Nội dung bài lab vẫn vậy, chỉ cần mn dùng 6 file step*.py như hướng dẫn là checkwork thành công)
+>
+> File đáp án: https://ptiteduvn-my.sharepoint.com/:w:/g/personal/mydtt_b21at134_stu_ptit_edu_vn/EYJut07wNqNPhBebSCrMITIBytpmh9vNw-KbuqKB-mpMKw?e=JphlBp
 
 ### tải lab
 
