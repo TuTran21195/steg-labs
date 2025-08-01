@@ -1,1 +1,1 @@
-*.python linguist-detectable=true 
+*.md linguist-language=Python
