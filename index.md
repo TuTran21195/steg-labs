@@ -7,8 +7,15 @@ nav_order: 1
 
 Repo này chứa các bài labs cho môn Kỹ thuật giấu tin PTIT. Các bài lab được thiết kế dựa trên các yêu cầu về thuật toán nằm trong tài liệu [Chợ ĐX giáo trình các kỹ thuật giấu tin.pdf](#)
 
-Site này sẽ chứa các hướng dẫn thực hành và một vài hướng dẫn khác dành cho các bạn.
+Site này sẽ chứa các hướng dẫn thực hành và một vài hướng dẫn khác dành cho các bài lab trong repo.
 
+[Github repository](https://github.com/TuTran21195/steg-labs){: .btn .btn-blue-200 }
+
+{: .warning }
+> Mọi nội dung trong site đều là góc nhìn của người làm lab về các kỹ thuật giấu tin, xin hãy cẩn trọng với các thông tin chủ quan được đưa ra!
+
+{: .info }
+> Mọi thắc mắc và góp ý, xin hãy tạo Issues hoặc Discussions trong [Repo Github](https://github.com/TuTran21195/steg-labs).
 
 # About this github pages template
 This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
