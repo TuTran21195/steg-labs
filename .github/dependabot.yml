@@ -6,9 +6,11 @@ updates:
       interval: daily
     allow:
       - dependency-type: direct
+    target-branch: gh-pages # Thêm dòng này để Dependabot tạo Pull Request cho nhánh gh-pages
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: daily
       time: "10:00"
     open-pull-requests-limit: 10
+    target-branch: gh-pages # Thêm dòng này để Dependabot tạo Pull Request cho nhánh gh-pages
