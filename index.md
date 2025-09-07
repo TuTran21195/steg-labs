@@ -17,6 +17,8 @@ Site này sẽ chứa các hướng dẫn thực hành và một vài hướng d
 {: .info }
 > Mọi thắc mắc và góp ý, xin hãy tạo Issues hoặc Discussions trong [Repo Github](https://github.com/TuTran21195/steg-labs).
 
+Nếu bạn hoàn toàn `mới` đối với Labtainer, trước hết hãy đọc [hướng dẫn đầu tiên](https://tutran21195.github.io/steg-labs/docs/first-doc.html) để có thể cài Labtainer và cài các bài labs trong repo này.
+
 # About this github pages template
 This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
 
