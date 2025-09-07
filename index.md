@@ -9,7 +9,7 @@ Repo này chứa các bài labs cho môn Kỹ thuật giấu tin PTIT. Các bài
 
 Site này sẽ chứa các hướng dẫn thực hành và một vài hướng dẫn khác dành cho các bài lab trong repo.
 
-[Github repository](https://github.com/TuTran21195/steg-labs){: .btn .btn-blue-200 }
+[Github repository](https://github.com/TuTran21195/steg-labs){: .btn .btn-purple-200 }
 
 {: .warning }
 > Mọi nội dung trong site đều là góc nhìn của người làm lab về các kỹ thuật giấu tin, xin hãy cẩn trọng với các thông tin chủ quan được đưa ra!

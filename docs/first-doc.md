@@ -5,7 +5,7 @@ nav_order: 2
 ---
 
 # Map of contents
-{: .infor }
+{: .info }
 > Comming soon...
 
 # Getting started
@@ -21,5 +21,5 @@ Sau đó các bạn cần tải file `.ova` của Labtainer (Tìm kiếm trên g
 
 
 # Hướng dẫn tạo lab cho Labtainer
-{: .infor }
+{: .info }
 > Comming soon...
