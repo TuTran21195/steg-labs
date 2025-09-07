@@ -1,4 +1,4 @@
-title: Audio Steganography Labs
+title: Audio Steganography
 description: A collection of labs for learning audio steganography techniques.
 theme: just-the-docs
 
@@ -6,3 +6,6 @@ url: https://tutran21195.github.io/steg-labs/
 
 aux_links:
   Labs Repository: https://github.com/TuTran21195/steg-labs
+
+# For copy button on code
+enable_copy_code_button: true

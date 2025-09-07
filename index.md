@@ -1,8 +1,16 @@
 ---
 title: Home
 layout: home
+nav_order: 1
 ---
+# Introduce
 
+Repo này chứa các bài labs cho môn Kỹ thuật giấu tin PTIT. Các bài lab được thiết kế dựa trên các yêu cầu về thuật toán nằm trong tài liệu [Chợ ĐX giáo trình các kỹ thuật giấu tin.pdf](#)
+
+Site này sẽ chứa các hướng dẫn thực hành và một vài hướng dẫn khác dành cho các bạn.
+
+
+# About this github pages template
 This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
 
 If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
