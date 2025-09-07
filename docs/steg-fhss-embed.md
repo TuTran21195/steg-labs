@@ -9,7 +9,7 @@ nav_order: 1
 {:toc}
 
 ## Introduce
-{ .info }
+{: .info }
 FHSS - Giấu tin trong âm thanh sử dụng kỹ thuật trải phổ nhảy tần
 
 

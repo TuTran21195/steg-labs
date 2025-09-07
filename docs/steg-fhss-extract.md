@@ -8,7 +8,7 @@ nav_order: 2
 {:toc}
 
 ## Introduce
-{ .info }
+{: .info }
 FHSS - Tách tin trong âm thanh sử dụng kỹ thuật trải phổ nhảy tần
 
 ## Hướng dẫn làm bài steg-fhss-extract
