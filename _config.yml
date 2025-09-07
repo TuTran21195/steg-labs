@@ -1,8 +1,8 @@
-title: PTIT Audio Steganography
-description: A collection of hands-on Labtainer exercises developed for the PTIT Steganography curriculum (Audio Steganography).
+title: Just the Docs Template
+description: A starter template for a Jeykll site using the Just the Docs theme!
 theme: just-the-docs
 
 url: https://tutran21195.github.io/steg-labs/
 
 aux_links:
-  Github Repository: https://github.com/TuTran21195/steg-labs
+  Labs Repository: https://github.com/TuTran21195/steg-labs
