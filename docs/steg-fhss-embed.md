@@ -1,5 +1,5 @@
 ---
-title: FHSS - Giấu tin trong âm thanh sử dụng kỹ thuật trải phổ nhảy tần
+title: FHSS steg-fhss-embed
 layout: default
 parent: Labs Trải phổ
 nav_order: 1
@@ -10,7 +10,9 @@ nav_order: 1
 
 ## Introduce
 { .info }
-> ...
+FHSS - Giấu tin trong âm thanh sử dụng kỹ thuật trải phổ nhảy tần
+
+
 
 ## Hướng dẫn làm bài steg-fhss-embed
 
