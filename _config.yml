@@ -8,6 +8,9 @@ aux_links:
   Labs Repository: https://github.com/TuTran21195/steg-labs
 aux_links_new_tab: true
 
+# Set a path/url to a favicon that will be displayed by the browser
+favicon_ico: "/assets/images/tree-smile.svg"
+
 # External navigation links
 nav_external_links:
   - title: Labs Repository on GitHub
