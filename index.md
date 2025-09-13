@@ -19,7 +19,7 @@ Site này sẽ chứa các hướng dẫn thực hành và một vài hướng d
 
 Nếu bạn hoàn toàn `mới` đối với Labtainer, trước hết hãy đọc [hướng dẫn đầu tiên](https://tutran21195.github.io/steg-labs/docs/first-doc.html) để có thể cài Labtainer và cài các bài labs trong repo này.
 
-Các lý thuyết về thuật toán/kỹ thuật được giải thích rõ trong giáo trình. Ngoài ra tại mỗi bài lab sẽ có trích nguồn của các tài liệu tham khảo thêm cho mỗi kỹ thuật một cách chi tiết tại mỗi trang hướng dẫn chi tiết của các bài lab tương ứng. Đồng thời lý thuyết về một số thuật toán có thể được người viết tổng hợp lại tại site [Tutan Garden - Digital notes](https://tutran-garden.vercel.app/) (chỉ ghi lại góc nhìn và hiểu của cá nhân của người viết, mang tính tham khảo, không phải chân lý, xin cân nhắc).
+Các lý thuyết về thuật toán/kỹ thuật được giải thích rõ trong giáo trình. Ngoài ra tại mỗi bài lab sẽ có trích nguồn của các tài liệu tham khảo thêm cho mỗi kỹ thuật một cách chi tiết tại mỗi trang hướng dẫn chi tiết của các bài lab tương ứng. Đồng thời lý thuyết về một số thuật toán có thể được người viết tổng hợp lại tại site [Tutan Garden - Audio Steganography Series](https://tutran-garden.vercel.app/2025/stego/lecture_notes_colection/) (Digital notes - chỉ ghi lại góc nhìn và hiểu của cá nhân của người viết, mang tính tham khảo, không phải chân lý, xin cân nhắc).
 
 
 # About this github pages template
