@@ -4,6 +4,7 @@
 ![License](https://img.shields.io/badge/License-MIT-B0DB9C)
 ![Python](https://img.shields.io/badge/Python-3\.x-C4D9FF?logo=python)
 [![Docs](https://img.shields.io/badge/Documents-tutran21195\.github\.io-FF8282)](https://tutran21195.github.io/steg-labs/)
+[![README-en](https://img.shields.io/badge/README-en-FF8282)](./README-en.md)
 
 
 ## Tổng quan
