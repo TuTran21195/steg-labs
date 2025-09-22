@@ -1,0 +1,1 @@
+Đây là các file âm thanh trước và sau khi giấu tin.
