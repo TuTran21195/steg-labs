@@ -39,12 +39,12 @@ Các bài lab trong repository này bao gồm việc cài đặt và kiểm th�
     *   **Giấu tin**: Cài đặt kỹ thuật giấu tin bằng cách điều chế sóng mang.
     *   **Tách tin**: Thực hiện giải trải phổ và giải điều chế để khôi phục thông tin.
     *   **Biểu diễn**: Biểu diễn các bit của tin giấu, mã giả ngẫu nhiên, mã sau điều chế.
-    *   **Thử nghiệm tấn công**: Đánh giá tính bền vững của phương pháp LSB trước các tấn công như cộng nhiễu.
+    *   **Thử nghiệm tấn công**: Đánh giá tính bền vững của phương pháp trước các tấn công như cộng nhiễu.
 
 4. **Phương pháp tự đánh dấu với kỹ thuật STSM**:
    *   **Giấu tin**: Cài đặt kỹ thuật giấu tin bằng cách chỉnh sửa tổng của lần lượt bộ 3 sample liên tiếp để giấu các bit của thông điệp kết hợp sử dụng mã Hamming cho chuỗi thông điệp được giấu.
    *   **Tách tin**: Tính toán tổng của lần lượt 3 sample liên tiếp và dùng mã Hamming và khôi phục thông điệp giấu.
-   *   **Thử nghiệm tấn công**: Đánh giá tính bền vững của phương pháp LSB trước các tấn công như nén âm thanh.
+   *   **Thử nghiệm tấn công**: Đánh giá tính bền vững của phương pháp trước các tấn công như nén âm thanh.
 
 5.  **Phương pháp Echo (Tiếng vang)**:
     *   **Giấu tin**: Cài đặt phương pháp giấu tin bằng cách thêm tiếng vang vào tín hiệu âm thanh gốc với các độ trễ khác nhau cho bit 0 và bit 1.

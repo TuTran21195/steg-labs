@@ -44,13 +44,13 @@ The labs in this repository include the implementation and testing of the follow
       * **Hiding**: Implements the technique of hiding information by modulating a carrier wave.
       * **Extraction**: Performs despreading and demodulation to recover the information.
       * **Representation**: Visualizes the bits of the hidden message, pseudo-random code, and modulated code.
-      * **Attack Test**: Evaluates the robustness of the LSB method against attacks such as adding noise.
+      * **Attack Test**: Evaluates the robustness of the method against attacks such as adding noise.
 
 4.  **Self-Marking with STSM Technique**:
 
       * **Hiding**: Implements the technique of hiding information by modifying the sum of three consecutive samples to hide the message bits, combined with using a Hamming code for the hidden message string.
       * **Extraction**: Calculates the sum of three consecutive samples and uses Hamming code to recover the hidden message.
-      * **Attack Test**: Evaluates the robustness of the LSB method against attacks such as audio compression.
+      * **Attack Test**: Evaluates the robustness of the method against attacks such as audio compression.
 
 5.  **Echo Hiding Method**:
 
