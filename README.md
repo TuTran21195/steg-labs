@@ -66,6 +66,7 @@ Cấu trúc thư mục được tổ chức theo từng kỹ thuật giấu tin 
 
 ## Hướng dẫn sử dụng
 
+> [!note]
 > Toàn bộ các hướng dẫn của các bài labs đều nằm trong:  [https://tutran21195.github.io/steg-labs/](https://tutran21195.github.io/steg-labs/)
 >
 > Các ghi chép về lý thuyết (lecture notes) của người thực hiện lab: [TuTran Digital notes - Audio Steganography Series](https://tutran-garden.vercel.app/2025/stego/lecture_notes_colection/)

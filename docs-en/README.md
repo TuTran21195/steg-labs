@@ -77,6 +77,7 @@ The directory structure is organized by steganography technique for easy managem
 
 ## How to Use
 
+> [!NOTE]
 > All lab instructions are located at: [https://tutran21195.github.io/steg-labs/](https://tutran21195.github.io/steg-labs/)
 >
 > The lab creator's theoretical lecture notes: [TuTran Digital notes - Audio Steganography Series](https://tutran-garden.vercel.app/2025/stego/lecture_notes_colection/)
